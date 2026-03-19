@@ -38,8 +38,8 @@ Ensure you have [Python](https://www.python.org/downloads/) installed on your sy
 2. Open your web browser and navigate to the local server address:
    `http://127.0.0.1:5000`
 
-3. Enter the target phone number and click **INITIALIZE**. The system will normalize the input and start streaming logs to the terminal UI.
-4. Click **ABORT** at any time to halt the operation safely.
+3. Enter the target phone number and click **START**. The system will normalize the input and start streaming logs to the terminal UI.
+4. Click **KILL** at any time to halt the operation safely.
 
 ## Known Dead APIs (Inactive)
 
