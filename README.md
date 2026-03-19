@@ -1,10 +1,10 @@
-# MySPAMBot OTP
+# OTP-Spam-IDN
 
 > [!CAUTION]
 > **Educational Purposes Only**
 > This project is created strictly for educational purposes to demonstrate API interactions, HTTP request handling, and building a Python-based Flask web interface. The author is not responsible for any misuse of this tool. Do not use this script against numbers without explicit permission from the owner.
 
-A Python-based OTP request automation tool with a modern Retro Futurism (Cyberpunk) web interface. MySPAMBot-OTP automates HTTPS requests to various public APIs to simulate OTP deliveries.
+A Python-based OTP request automation tool with a modern Retro Futurism (Cyberpunk) web interface. OTP-Spam-IDN automates HTTPS requests to various public APIs to simulate OTP deliveries.
 
 ## Features
 
@@ -19,8 +19,8 @@ Ensure you have [Python](https://www.python.org/downloads/) installed on your sy
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/rickyfazaa/MySPAMBot-OTP.git
-   cd MySPAMBot-OTP
+   git clone https://github.com/ro-boduck/OTP-Spam-IDN.git
+   cd OTP-Spam-IDN
    ```
 
 2. Install the required dependencies:

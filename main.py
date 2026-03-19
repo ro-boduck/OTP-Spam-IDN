@@ -257,13 +257,13 @@ def start(nomor: str, x: int) -> None:
         autoketik("--reboot wait 15 seconds--")
         time.sleep(15) # Wait 15 seconds
         os.system("cls") 
-        autoketik(f"{merah}Repeating Spam to Number : {nomor}.....{hijau}") # Logging repeat
+        autoketik(f"{merah}Starting OTP-Spam-IDN targeting {nomor}...{hijau}") # Logging repeat
         jam(nomor)
         
 def main() -> None:
     """Entrypoint function for terminal execution."""
     os.system("cls") 
-    autoketik(f"Welcome to {merah}MySpamBot")
+    autoketik(f"Welcome to {merah}OTP-Spam-IDN")
     print(f"""{kuning}Author      : {hijau}Ricky Khairul Faza
 {kuning}Github      : {merah}github.com/rickyfazaa
 {kuning}Instagram   : {biru}instagram.com/rickyfazaa""")
