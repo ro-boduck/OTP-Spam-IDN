@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySPAMBot - Retro Terminal</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Google Fonts for neon aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@500;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="crt-overlay"></div>
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="OTP SPAMMER">OTP SPAMMER</h1>
+            <p class="subtitle">BOT : ONLINE</p>
+        </header>
+
+        <main class="dashboard-grid">
+            <section class="control-panel">
+                <form id="spam-form">
+                    <div class="input-group">
+                        <label for="phone-input">Target Phone Number</label>
+                        <input type="tel" id="phone-input" name="phone" inputmode="tel" autocomplete="off"
+                            placeholder="e.g. 0895..." required>
+                    </div>
+                    <div class="button-group">
+                        <button type="submit" id="start-btn" aria-label="Start Spammer">START</button>
+                        <button type="button" id="stop-btn" aria-label="Stop Spammer" disabled>KILL</button>
+                    </div>
+                </form>
+                <div id="error-message" class="hidden"></div>
+            </section>
+
+            <div class="logs-container">
+                <section class="terminal split-view">
+                    <div class="terminal-header">
+                        <span>SYSTEM EXECUTION LOG</span>
+                        <span id="status-indicator" class="status idle">IDLE</span>
+                    </div>
+                    <div id="terminal-output" class="terminal-output" role="log" aria-live="polite">
+                        <div>Waiting for input...</div>
+                    </div>
+                </section>
+
+                <section class="monitor split-view">
+                    <div class="terminal-header">
+                        <span>API MONITOR</span>
+                        <span class="status running">LISTENING</span>
+                    </div>
+                    <div class="table-container">
+                        <table id="api-table">
+                            <thead>
+                                <tr>
+                                    <th>METHOD</th>
+                                    <th>DOMAIN</th>
+                                    <th>STATUS</th>
+                                </tr>
+                            </thead>
+                            <tbody id="api-monitor-output">
+                                <tr>
+                                    <td colspan="3" style="text-align: center; color: #888;">Intercepting Traffic...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
